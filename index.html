@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/16b48c5101.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+
+  <!-- -------------------------------------------------------------NAVIGATION MENU-------------------------------------------------------------- -->
+
+  <nav class="navbar navbar-expand-sm">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Brand</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link menu-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link menu-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link menu-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link menu-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link menu-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ------------------------------------------------------------------SHOWCASE SLIDER--------------------------------------------------------------- -->
+  <section id="showcase">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1 active">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-left text-dark mb-5">
+              <h1>Heading One</h1>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
+                quod aliquid inventore vero perspiciatis.</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-left text-dark mb-5">
+              <h1>Heading Two</h1>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
+                quod aliquid inventore vero perspiciatis.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-3">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-left mb-5">
+              <h1>Heading Three</h1>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
+                quod aliquid inventore vero perspiciatis.</p>
+              <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------ABOUT US SECTION------------------------------------------------------------------ -->
+
+  <section id="about-page" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 text-left">
+          <h2 class="section-heading">About Us</h2>
+          <hr class="about-hr">
+          <br>
+
+          <div class="left-side">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="mission-tab" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Mission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="vision-tab" data-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="false">Vision</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                <p>TAc tincidunt vitae semper quis lectus nulla. Eu lobortis elementum nibh tellus molestie nunc. Quam vulputate dignissim suspendisse in est ante in nibh mauris.</p>
+                <a href="#" class="readmore">Read More</a>
+              </div>
+              <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                <p>Adipiscing vitae proin sagittis nisl rhoncus. Orci nulla pellentesque dignissim enim sit amet venenatis. Nunc lobortis mattis aliquam faucibus purus.</p>
+                <a href="#" class="readmore">Read More</a>
+              </div>
+              <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+                <p>Et pharetra pharetra massa massa ultricies mi quis. Facilisi morbi tempus iaculis urna. Nam aliquam sem et tortor consequat id. Sed viverra tellus in
+                  hac habitasse platea dictumst vestibulum.</p>
+                <a href="#" class="readmore">Read More</a>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="readmore">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="images/about.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------------------------FEATURES SECTION-------------------------------------------------------------------- -->
+
+
+  <section id="features-icons" class="py-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="features-heading">Our Services</h2>
+          <hr class="features-hr">
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-check-circle fa-4x"></i>
+          <h3 class="feature-title">Easy to use.</h3>
+          <p>Nibh sit amet commodo nulla facilisi nullam.</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-bullseye fa-4x"></i>
+          <h3 class="feature-title">Elite Clientele</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-heart fa-4x"></i>
+          <h3 class="feature-title">Guaranteed to work.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------------------TEAM CONTENT SECTION--------------------------------------------------------------- -->
+
+
+  <section id="team-content">
+    <div class="container">
+      <h2 class="section-heading">Meet Our Team</h2>
+      <hr class="about-hr">
+      <br>
+      <div class="row">
+        <div class="team-content-column col-lg-3 col-md-6">
+          <div class="card mb-4 border-0">
+            <img src="images/propic-1.jpg" alt="Card image cap" class="card-img-top">
+            <div class="card-body">
+              <div class="card-title">Stephanie Hastings</div>
+              <p class="designation"><em>Director</em></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <a href="#" class="card-link">Know More</a>
+          </div>
+        </div>
+
+        <div class="team-content-column col-lg-3 col-md-6">
+          <div class="card mb-4 border-0">
+            <img src="images/propic-2.jpg" alt="Card image cap" class="card-img-top">
+            <div class="card-body">
+              <div class="card-title">Josh Edmunds</div>
+              <p class="designation"><em>Creative Designer</em></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <a href="#" class="card-link">Know More</a>
+          </div>
+        </div>
+
+        <div class="team-content-column col-lg-3 col-md-6">
+          <div class="card mb-4 border-0">
+            <img src="images/propic-3.jpg" alt="Card image cap" class="card-img-top">
+            <div class="card-body">
+              <div class="card-title">Luke Graham</div>
+              <p class="designation"><em>Analyst</em></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <a href="#" class="card-link">Know More</a>
+          </div>
+        </div>
+
+        <div class="team-content-column col-lg-3 col-md-6">
+          <div class="card mb-4 border-0">
+            <img src="images/propic-4.jpg" alt="Card image cap" class="card-img-top">
+            <div class="card-body">
+              <div class="card-title">Claire Fields</div>
+              <p class="designation"><em>Graphic Designer</em></p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <a href="#" class="card-link">Know More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------TESTIMONIALS-SECTION------------------------------------------------------------------- -->
+
+  <section class="colored-section" id="testimonials">
+
+    <h2 class="features-heading">Testimonials</h2>
+    <hr class="features-hr">
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active testimonial-container">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="testimonial-pic" src="images/pic-01.jpg" alt="Katheriene Pierce">
+              <h4 class="candidate-name">Katheriene Pierce</h4>
+              <br>
+              <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum.</p>
+            </div>
+            <div class="col-md-6">
+              <img class="testimonial-pic" src="images/pic-02.jpg" alt="Daniel Louis">
+              <h4 class="candidate-name">Daniel Louis</h4>
+              <br>
+              <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item testimonial-container">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="testimonial-pic" src="images/pic-03.jpg" alt="Kit Harrington">
+              <h4 class="candidate-name">Kit Harrington</h4>
+              <br>
+              <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum.</p>
+            </div>
+            <div class="col-md-6">
+              <img class="testimonial-pic" src="images/pic-04.jpg" alt="Jack Williams">
+              <h4 class="candidate-name">Jack Williams</h4>
+              <br>
+              <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item testimonial-container">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="testimonial-pic" src="images/pic-05.jpg" alt="Sarah Norms">
+              <h4 class="candidate-name">Sarah Norms</h4>
+              <br>
+              <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum.</p>
+            </div>
+            <div class="col-md-6">
+              <img class="testimonial-pic" src="images/pic-06.jpg" alt="Katheriene Pierce">
+              <h4 class="candidate-name">Sarah Norms</h4>
+              <br>
+              <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a> -->
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ----------------------------------------------------------------FOOTER SECTION------------------------------------------------------------------------- -->
+
+
+  <section id="footer-section">
+    <div class="container">
+      <div class="row enquiry">
+        <div class="enquiry-space col-lg-6">
+
+          <h3 class="section-heading">Enquiry Form</h3>
+          <hr class="about-hr">
+          <br>
+
+          <form class="" action="index.html" method="post">
+            <label for="name" class="col-sm-4 name-1 control-label">Name</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="name" name="name" placeholder required>
+            </div>
+
+            <label for="email" class="col-sm-4 name-1 control-label">Email</label>
+            <div class="col-sm-8">
+              <input type="email" class="form-control" id="email" name="email" placeholder required>
+            </div>
+
+            <label for="contact" class="col-sm-4 name-1 control-label">Contact Number</label>
+            <div class="col-sm-8">
+              <input type="number" class="form-control" id="contact" name="contact" placeholder required>
+            </div>
+
+            <label for="field" class="col-sm-4 name-1 control-label">Technology</label>
+            <div class="col-sm-8">
+              <select name="choices" id="options" class="form-control" id="stream" onchange="" required>
+                <option value>Select technology</option>
+                <option value="Angular">Angular</option>
+                <option value="Python">Python</option>
+                <option value="csharp">C#</option>
+              </select>
+            </div>
+
+            <div class="col-sm-offset-sm col-sm-6">
+              <button type="submit" class="btn btn-outline-dark">Submit</button>
+            </div>
+
+          </form>
+
+
+
+        </div>
+
+
+        <div class="contact-space col-md-6">
+          <h3 class="section-heading">Contact Us</h3>
+          <hr class="about-hr">
+          <br>
+
+          <div class="col-md-10 col-md-offset-1">
+            <div class="row cont-row">
+              <div class="col-sm-2 location-icon contact-icon">
+                <img src="images/location.png" alt="location" width="40" class="cont">
+              </div>
+              <div class="col-sm-10">
+                <h4 class="address">
+                  485 Maple Drive (later 211 Pine St.),<br>
+                  Mayfield, U.S.<br>
+                </h4>
+                <br>
+              </div>
+            </div>
+
+            <div class="row cont-row">
+              <div class="col-sm-2 phone-icon contact-icon">
+                <img src="images/contact.png" width="40" alt>
+              </div>
+              <div class="col-sm-10">
+                <h4 class="phone">
+                  +917893678146 / +917839749314<br>
+                </h4>
+                <br>
+              </div>
+            </div>
+
+            <div class="row cont-row">
+              <div class="col-sm-2 email-icon contact-icon">
+                <img src="images/email.png" width="40" alt>
+              </div>
+              <div class="col-sm-10">
+                <h4 class="email">
+                  fictionaladdress@email.com <br>
+                </h4>
+                <br>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    // Configure Slider
+    $('.carousel').carousel({
+      interval: 6000,
+      pause: 'hover'
+    });
+  </script>
+
+
+</body>
+
+</html>
